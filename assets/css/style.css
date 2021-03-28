@@ -1,0 +1,419 @@
+/* reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}   
+
+/*common*/
+html{  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.clear{
+    clear: both;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 11px;
+    padding-right: 10px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.col-full{
+    width: 100% ;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.pull-right{
+    float: right;
+}
+
+/*main*/
+#main{
+
+}
+
+/* Begin header */
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;           
+}
+
+#nav, .subnav{
+    list-style-type: none;  
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav .subnav{
+    display: none;          
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;       
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.5); 
+    top: 100%;
+    left: 0;
+}
+
+
+#nav .subnav li:hover a,   
+#nav > li:hover > a{      
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav > li:hover .subnav{    
+    display: block;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 40px;    
+}
+
+#nav > li{
+    display: inline-block;
+    padding: 0 0;
+}
+
+#nav > li > a{             
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{                 
+    text-decoration: none;  
+    line-height: 46px;     
+    padding: 0 24px;       
+    display: block;
+}
+
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+}
+
+#header .search-btn{
+    float: right;           
+    padding: 0 21px;
+    cursor: pointer;        
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 18px;
+    line-height: 46px;
+}
+/* End header */
+
+/* Begin slider */
+#slider{
+    position: relative;
+    margin-top: 46px;      
+    padding-top: 45%;       
+    background: url('/w3_band/assets/img/slider_1.jpg') top center / cover no-repeat;
+}
+
+#slider .band-name{
+    position: absolute;
+    top: 200px;
+    color: grey;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    font-family: Snell Roundhand, cursive;
+    opacity: 0.4;
+}
+
+#slider .text-content{
+    color: rgba(39, 12, 192, 0.774);
+    position: absolute;
+    bottom: 48px;
+    width: 100%;            
+    text-align: center;     
+    font-family: cursive;
+}
+
+#slider .text-heading{
+    font-size: 50px;
+}
+
+#slider .text-discription{
+    font-size: 30px;
+    margin-top: 15px;
+}
+/* End slider */
+
+/*Begin Content*/
+#content{
+
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0 84px;
+    margin-left: auto;      
+    margin-right: auto;
+} 
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;        
+}
+
+#content .section-subheading{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;         
+    opacity: 0.6;              
+}
+
+#content .about-band{
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: justify;       
+    line-height: 1.4;           
+}
+
+#content .member-list{
+    text-align: center;
+    margin-top: 32px;
+  
+}
+
+#content .member-name{
+    margin-top: 8px;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(23, 11, 34);
+}
+
+#content .member-img{
+    margin-top: 4px;
+    max-width: 160px;
+    max-height: 200px;
+    border-radius: 4px;      
+}
+/* End content */
+
+/*Begin Tour section*/
+.tour-section{
+    background-color: #000;
+}
+
+        /*tickets*/
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tickets-list li{
+    font-size: 16px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;  
+    color: #757575;
+    list-style-type: none;
+}
+
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 2px 4px;
+}
+
+.tickets-list .quantity{
+     float: right;
+     background-color: #000;
+     color: #fff;
+     margin-top: -2px;
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 24px;
+}
+
+        /*place*/
+.place-list{
+    margin-top: 32px;
+}
+
+.place-img:hover{
+    opacity: 0.7;
+}
+
+.place-img{
+    display: block;        
+}
+
+.place-body{
+    background-color: #fff;
+    height: 190px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.place-heaeding{
+    font-weight: 550;
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+    font-style: italic;
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+/* End tour section */
+
+/* begin product section */
+.pro-section{
+    background-color: #757575;
+}
+
+.pro-row{
+    margin-top: 28px;
+}
+
+/* end product section */
+
+/*Begin Contact form*/
+.contact-section{
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-infor i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 9px;
+    border: 1px solid #ccc;
+    width: 100%;
+}   
+
+.btn-fix{
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-fix:hover{
+    background-color: #757575;
+    color: #fff;
+}
+/* End contact form */
+
+/*Begin footer section*/
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social-list{
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.social-list a{
+    text-decoration: none;
+    color: rgba(24, 27, 29, 0.6);
+    padding: 0 4px;
+}
+
+.social-list a:hover{
+    opacity: 0.7;
+}
+
+.copyright{
+    margin-top: 16px;
+    color: rgba(24, 27, 29, 0.6);
+}
